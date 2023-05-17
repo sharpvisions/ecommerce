@@ -384,6 +384,7 @@
 
 .qty-input {
     border-radius: 100px 0px 0px 100px;
+    text-align: center;
 }
 
 .btn-input-dropdown {
@@ -393,4 +394,40 @@
 
 .btn-input-dropdown:hover {
     background-color: #d4d4d4 !important;
+}
+
+.detail-wishlist-btn{
+    background: white;
+    border: 1px solid #E5E9EB;
+    border-radius: 150px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.detail-wishlist-btn:hover {
+    background: #E5E9EB;
+    border: 1px solid #E5E9EB;
+}
+
+.star-fill {
+    color: #FFCE31;
+}
+
+.star-empty {
+    color: #E2E4FD;
+}
+
+.reviews-progress-bar .progress {
+    margin: 0px 0px 15px 0px;
+    height: 24px;
+}
+
+.reviews-progress-bar .progress-bar {
+    background-color: #FFCE31;
+}
+
+.progress-info {
+    margin: 0px 0px 15px 0px;
+    height: 24px;
 }

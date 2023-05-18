@@ -12,7 +12,7 @@
 
         <link type="text/css" rel="stylesheet" href="assets/css/lightslider.css" />   
 
-        <title>Product</title>
+        <title>Category</title>
     </head>
     <body>
 
@@ -83,7 +83,7 @@
         <!-- category menu ends -->
 
 
-        <!-- gallery and product short info start -->
+        <!-- category products start -->
         <section class="overflow-x-hidden">
             <!-- Breadcumb start -->
             <div class="row pt-5 px-5 pb-4">
@@ -104,7 +104,31 @@
 
             <div class="row px-5">
                 <div class="col-md-12 py-4 ">
-                    <h4 class="fw-bold">Beauty</h4>
+                    <div class="row">
+                        <div class="col d-flex align-items-center">
+                            <h4 class="fw-bold">Beauty</h4> 
+                            <p class="m-0 fs-1 px-1"><i class="bi bi-dot"></i></p>
+                            <p class="m-0 font-14">143 items</p> 
+                        </div>
+                        <div class="col-auto d-flex justify-content-end">
+                            <select class="form-select me-3">
+                                <option>Sort by latest</option>
+                                <option>Sort by oldest</option>
+                                <option>Sort by name</option>
+                                <option>Sort by price low</option>
+                                <option>Sort by price high</option>
+                            </select>
+
+                            <select class="form-select">
+                                <option>Show 10</option>
+                                <option>Show 30</option>
+                                <option>Show 50</option>
+                                <option>Show 80</option>
+                                <option>Show 100</option>
+                            </select>
+                        </div>
+                    </div>
+                    
                 </div>
 
                 <div class="col-md-3">
@@ -333,8 +357,18 @@
                     <!-- product card ends -->
                 </div>
             </div>
+
+            <div class="row p-5 mb-5">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <button type="button" class="btn border">First</button>
+                    <button class="button-dark px-5 py-2 mx-3"> 
+                        Load more
+                    </button>
+                    <button type="button" class="btn border">Last</button>
+                </div>
+            </div>
         </section>
-        <!-- gallery and product short info end -->
+        <!-- category products  end -->
 
     
 

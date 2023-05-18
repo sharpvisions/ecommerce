@@ -452,11 +452,15 @@
         
                     <div class="row p-5 mb-5">
                         <div class="col-md-12 d-flex justify-content-center">
-                            <button type="button" class="btn border">First</button>
-                            <button class="button-dark px-5 py-2 mx-3"> 
-                                Load more
-                            </button>
-                            <button type="button" class="btn border">Last</button>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                  <li class="page-item"><a class="page-link text-dark" href="#"><i class="bi bi-chevron-left p-2"></i></a></li>
+                                  <li class="page-item"><a class="page-link text-dark px-3" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link text-dark px-3" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link text-dark px-3" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link text-dark" href="#"><i class="bi bi-chevron-right p-2"></i></a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>

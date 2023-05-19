@@ -542,3 +542,34 @@
   }
   
 /* price slider  */
+
+
+.side-cart-footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 15px;
+}
+
+.button-secondary {
+    background-color: #2D2D2D;
+    color: white;
+}
+
+.button-secondary:hover {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.button-primary {
+    background-color: #6E7AF7;
+    color: white;
+}
+
+.button-primary:hover {
+    background-color: #646fe2;
+    color: white;
+}

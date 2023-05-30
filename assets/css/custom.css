@@ -607,3 +607,27 @@
 .card-detail-items .product-detail-sizes .btn-check:checked + .custom-label {
     background-color: #ebebeb;
 }
+
+.coupon-input input {
+    height: 48px;
+    background: #F6F6F6;
+    border: 1px solid #D2D2D2;
+    border-radius: 8px;
+}
+
+.coupon-input input::placeholder {
+    font-size: 14px;
+    color: #737373;
+}
+
+.coupon-input button {
+    color: #6E7AF7;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.text-success-light {
+    color: #2DC071;
+}

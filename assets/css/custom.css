@@ -656,3 +656,12 @@
 .custom-scroll:active {
     cursor: grabbing;
 }
+
+.address-badge {
+    align-items: center;
+    padding: 2px 6px;
+    border: 1px solid #2DC071;
+    border-radius: 4px;
+    color: #2DC071;
+    font-size: 12px;
+}

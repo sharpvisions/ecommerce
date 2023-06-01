@@ -221,7 +221,7 @@
 
 .offer-div{
     background-color: #fff6d2;
-    padding: 80px 120px;
+    padding: 80px 0px;
 }
 
 .offer-title{
@@ -632,3 +632,27 @@
     color: #2DC071;
 }
 
+.custom-scroll {
+    overflow: auto;
+    white-space: nowrap;
+    cursor: grab;
+    user-select: none;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+    display: none;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.custom-scroll:active {
+    cursor: grabbing;
+}

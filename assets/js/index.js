@@ -1,6 +1,33 @@
+(function() {
+    var isMouseDown = false;
+    var startX, scrollLeft;
+  
+    document.getElementById('scrollable-list').addEventListener('mousedown', function(e) {
+      isMouseDown = true;
+      startX = e.pageX - this.offsetLeft;
+      scrollLeft = this.scrollLeft;
+    });
+  
+    document.getElementById('scrollable-list').addEventListener('mouseleave', function() {
+      isMouseDown = false;
+    });
+  
+    document.getElementById('scrollable-list').addEventListener('mouseup', function() {
+      isMouseDown = false;
+    });
+  
+    document.getElementById('scrollable-list').addEventListener('mousemove', function(e) {
+      if (!isMouseDown) return;
+      e.preventDefault();
+      var x = e.pageX - this.offsetLeft;
+      var walk = (x - startX) * 2; // Adjust the scrolling speed if needed
+      this.scrollLeft = scrollLeft - walk;
+    });
+})(); 
+
 const rangeInput = document.querySelectorAll(".range-input input"),
-  priceInput = document.querySelectorAll(".price-input input"),
-  range = document.querySelector(".slider .progress");
+    priceInput = document.querySelectorAll(".price-input input"),
+    range = document.querySelector(".slider .progress");
 let priceGap = 1000;
 
 priceInput.forEach((input) => {

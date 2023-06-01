@@ -17,66 +17,153 @@
     <body>
 
         <!-- Topbar start -->
-        <section class="overflow-x-hidden">
-            <div class="row py-2 px-5" style="background: #141414;">
-                <div class="col-md-4">
-                    <span class="font-12 text-white"><i class="bi bi-telephone"></i> (225) 555-0118</span>
-                    <span class="font-12 text-white ps-3"><i class="bi bi-envelope"></i> mail@example.com</span>
-                </div>
+        <section class="overflow-x-hidden" style="background: #141414;">
+            <div class="container-xl">
+                <div class="row py-2 px-sm-5 px-xl-0">
+                    <div class="col-md-4">
+                        <span class="font-12 text-white"><i class="bi bi-telephone"></i> (225) 555-0118</span>
+                        <span class="font-12 text-white ps-3"><i class="bi bi-envelope"></i> mail@example.com</span>
+                    </div>
 
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <span class="font-12 text-white">Follow Us  and get a chance to win 80% off</span>
-                </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <span class="font-12 text-white">Follow Us  and get a chance to win 80% off</span>
+                    </div>
 
-                <div class="col-md-4 text-end">
-                    <span class="font-12 text-white">Follow </span>
-                    <span class="font-12 text-white ps-2"><i class="bi bi-instagram"></i></span>
-                    <span class="font-12 text-white ps-2"><i class="bi bi-youtube"></i></span>
-                    <span class="font-12 text-white ps-2"><i class="bi bi-facebook"></i></span>
-                    <span class="font-12 text-white ps-2"><i class="bi bi-twitter"></i></span>
+                    <div class="col-md-4 text-end">
+                        <span class="font-12 text-white">Follow </span>
+                        <span class="font-12 text-white ps-2"><i class="bi bi-instagram"></i></span>
+                        <span class="font-12 text-white ps-2"><i class="bi bi-youtube"></i></span>
+                        <span class="font-12 text-white ps-2"><i class="bi bi-facebook"></i></span>
+                        <span class="font-12 text-white ps-2"><i class="bi bi-twitter"></i></span>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Topbar ends -->
         
         <!-- nav menu starts -->
-        <section class="overflow-x-hidden">
-            <div class="row py-2 px-5 border-bottom py-3">
-                <div class="col-md-6">
-                    <img src="assets/images/logo.png" class="img-fluid" width="100px" />
-                </div>
-                <div class="col-md-6 d-flex align-items-center justify-content-end">
-                    <div class="ps-5"> <span>العربية</span> </div>
-                    <div class="ps-5"> <img src="assets/icons/search.png" width="22px" class="img-fluid"> </div>
-                    <div class="ps-5"> <img src="assets/icons/wishlist.png" width="22px" class="img-fluid"> </div>
-                    <div class="ps-5"> <img src="assets/icons/cart.png" width="22px" class="img-fluid"> </div>
-                    <div class="ps-5 pe-4 border-end"> <img src="assets/icons/user.png" width="22px" class="img-fluid"> <span class="font-12">Sign in</span> </div>
-                    <div class="ps-4"> <i class="bi bi-list fs-2"></i> </div>
+        <section class="overflow-x-hidden border-bottom">
+            <div class="container-xl">
+                <div class="row py-3 px-sm-5 px-xl-0">
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" class="img-fluid" width="100px" />
+                        </a>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center justify-content-end">
+                        <div class="ps-5"> 
+                            <a href="#" class="text-decoration-none text-dark">
+                                <span>العربية</span> 
+                            </a>
+                        </div>
+
+                        <div class="ps-5"> 
+                            <a href="#">
+                                <img src="assets/icons/search.png" width="22px" class="img-fluid"> 
+                            </a>
+                        </div>
+
+                        <div class="ps-5"> 
+                            <a href="#">
+                                <img src="assets/icons/wishlist.png" width="22px" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="ps-5"> 
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#side-cart" aria-controls="side-cart">
+                                <img src="assets/icons/cart.png" width="22px" class="img-fluid">
+                            </a>
+                        </div>
+
+                        <div class="ps-5 pe-4 border-end">
+                            <a href="signin.html" class="text-decoration-none text-dark">
+                                <img src="assets/icons/user.png" width="22px" class="img-fluid"> <span class="font-12">Sign in</span>
+                            </a> 
+                        </div>
+
+                        <div class="ps-4"> 
+                            <a href="#" class="text-dark">
+                                <i class="bi bi-list fs-2"></i> 
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- nav menu ends -->
 
         <!-- category menu starts -->
-        <section class="overflow-x-hidden">
-            <div class="row py-2 px-5 border-bottom py-3">
-                <div class="col-md-12 d-flex align-items-center">
-                    <div class="pe-2"> <i class="bi bi-list fs-2"></i> </div>
-                    <div class="pe-4 font-13 fw-bold"> ALL CATEGORIES <i class="fa-solid fa-chevron-down"></i></div>
+        <section class="overflow-x-hidden border-bottom">
+            <div class="container-xl">
+                <div class="row py-3 px-sm-5 px-xl-0">
+                    <div class="col-auto d-flex align-items-center">
+                        <a href="#" class="text-dark">
+                            <div class="pe-2"> <i class="bi bi-list fs-2"></i> </div>
+                        </a>
 
-                    <ul class="m-0 font-13 fw-bold">
-                        <li class="list-inline-item me-5">ELECTRONICS</li>
-                        <li class="list-inline-item me-5">HOME APPLIANCES</li>
-                        <li class="list-inline-item me-5">MOBILES</li>
-                        <li class="list-inline-item me-5">MEN</li>
-                        <li class="list-inline-item me-5">WOMEN</li>
-                        <li class="list-inline-item me-5">BEAUTY</li>
-                        <li class="list-inline-item me-5">SPORTS</li>
-                        <li class="list-inline-item me-5">TOYS</li>
-                        <li class="list-inline-item me-5">WEARABLES</li>
-                        <li class="list-inline-item me-5">LAPTOPS</li>
-                        <li class="list-inline-item">FURNITURE</li>
-                    </ul>  
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="pe-4 font-13 fw-bold d-flex align-items-center"> ALL CATEGORIES <i class="fa-solid fa-chevron-down ms-2"></i></div>
+                        </a>
+                    </div>
+                    <div class="col d-flex align-items-center custom-scroll" id="scrollable-list">
+                        <ul class="m-0 font-13 fw-bold">
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    ELECTRONICS
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    HOME APPLIANCES
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    MOBILES
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    MEN
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    WOMEN
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    BEAUTY
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    SPORTS
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    TOYS
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    WEARABLES
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-5">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    LAPTOPS
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    FURNITURE
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,9 +171,9 @@
 
 
         <!-- category products start -->
-        <section class="overflow-x-hidden">
+        <section class="overflow-x-hidden container-xl">
             <!-- Breadcumb start -->
-            <div class="row pt-5 px-5 pb-4">
+            <div class="row pt-5 pb-4 px-sm-5 px-xl-0">
                 <div class="col-md-12 d-flex align-items-center font-12">
                     <p class="text-muted m-0">Home</p>
                     <i class="bi-chevron-right fw-bold px-2"></i>
@@ -102,7 +189,7 @@
             </div>
             <!-- Breadcumb ends -->
 
-            <div class="row px-5">
+            <div class="row px-sm-5 px-xl-0">
                 <div class="col-md-12 py-4 ">
                     <div class="row">
                         <div class="col d-flex align-items-center">
@@ -373,61 +460,62 @@
     
 
         <!-- footer start -->
-        <section class="overflow-x-hidden">
-            <div class="row p-5 bg-light-sm">
-                <div class="col-md-4 pe-5">
-                    <img src="assets/images/logo.png" class="img-fluid" width="100px" />
-                    
-                    <p class="font-14 text-muted m-0 my-4">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                    </p>
+        <section class="overflow-x-hidden bg-light-sm">
+            <div class="container-xl">
+                <div class="row py-5 px-sm-5 px-xl-0">
+                    <div class="col-md-4 pe-5">
+                        <img src="assets/images/logo.png" class="img-fluid" width="100px" />
+                        
+                        <p class="font-14 text-muted m-0 my-4">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                        </p>
 
-                    <div class="footer-contact">
-                        <i class="bi bi-telephone pe-2"></i> (225) 555-0118
+                        <div class="footer-contact">
+                            <i class="bi bi-telephone pe-2"></i> (225) 555-0118
+                        </div>
+
+                        <div class="footer-contact pt-2">
+                            <i class="bi bi-envelope pe-2"></i> mail@example.com
+                        </div>
                     </div>
 
-                    <div class="footer-contact pt-2">
-                        <i class="bi bi-envelope pe-2"></i> mail@example.com
+                    <div class="col-md-2">
+                        <p class="font-14 fw-bold">Account</p>
+                        <ul class="p-0 font-14 text-muted">
+                            <li class="list-group-item py-2">My account</li>
+                            <li class="list-group-item py-2">Login/Register</li>
+                            <li class="list-group-item py-2">Cart</li>
+                            <li class="list-group-item py-2">Wishlist</li>
+                        </ul>
                     </div>
-                </div>
 
-                <div class="col-md-2">
-                    <p class="font-14 fw-bold">Account</p>
-                    <ul class="p-0 font-14 text-muted">
-                        <li class="list-group-item py-2">My account</li>
-                        <li class="list-group-item py-2">Login/Register</li>
-                        <li class="list-group-item py-2">Cart</li>
-                        <li class="list-group-item py-2">Wishlist</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <p class="font-14 fw-bold">Quick Links</p>
-                    <ul class="p-0 font-14 text-muted">
-                        <li class="list-group-item py-2">Privacy Policy</li>
-                        <li class="list-group-item py-2">Terms of Use</li>
-                        <li class="list-group-item py-2">Contact</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 text-end">
-                    <div class="mb-3">
-                        <img src="assets/images/appstore.png" class="img-fluid" width="100px" />
+                    <div class="col-md-2">
+                        <p class="font-14 fw-bold">Quick Links</p>
+                        <ul class="p-0 font-14 text-muted">
+                            <li class="list-group-item py-2">Privacy Policy</li>
+                            <li class="list-group-item py-2">Terms of Use</li>
+                            <li class="list-group-item py-2">Contact</li>
+                        </ul>
                     </div>
-                    <div class="my-3">
-                        <img src="assets/images/googleplay.png" class="img-fluid" width="100px" />
-                    </div>
-                    
-                    <div class="pt-4">
-                        <span class="font-14">Follow Us </span>
-                        <span class="font-14 ps-2"><i class="bi bi-instagram"></i></span>
-                        <span class="font-14 ps-2"><i class="bi bi-youtube"></i></span>
-                        <span class="font-14 ps-2"><i class="bi bi-facebook"></i></span>
-                        <span class="font-14 ps-2"><i class="bi bi-twitter"></i></span>
+
+                    <div class="col-md-4 text-end">
+                        <div class="mb-3">
+                            <img src="assets/images/appstore.png" class="img-fluid" width="100px" />
+                        </div>
+                        <div class="my-3">
+                            <img src="assets/images/googleplay.png" class="img-fluid" width="100px" />
+                        </div>
+                        
+                        <div class="pt-4">
+                            <span class="font-14">Follow Us </span>
+                            <span class="font-14 ps-2"><i class="bi bi-instagram"></i></span>
+                            <span class="font-14 ps-2"><i class="bi bi-youtube"></i></span>
+                            <span class="font-14 ps-2"><i class="bi bi-facebook"></i></span>
+                            <span class="font-14 ps-2"><i class="bi bi-twitter"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
-            
             <div class="row bg-light p-3">
                 <div class="col-md-12 text-center">
                     <p class="m-0 font-14 text-muted">2022 All rights reserved. Taqreri.com powered by sharpvisions.sa</p>

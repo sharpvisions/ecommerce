@@ -181,7 +181,7 @@
                     </div>
 
                     <div class="pt-4">
-                        <button class="button-dark px-3 py-2 w-100"> Pay Now <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+                        <button class="button-dark px-3 py-2 w-100" data-bs-toggle="modal" data-bs-target="#order_placed"> Pay and Place Order <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
                     </div>
                 </div>
             </div>
@@ -252,6 +252,33 @@
             </div>
         </section>
         <!-- footer ends -->
+
+        <!-- Order Placed Modal start -->        
+        <div class="modal fade" id="order_placed" tabindex="-1" aria-labelledby="order_placedLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body py-5">
+                    <div class="text-center py-4">
+                        <img src="assets/images/celebration.png" class="img-fluid">
+                        <h3 class="fw-bold pt-3 text-uppercase">Confirmed</h3>
+                        <p>Thank you for your order</p>
+
+                        <div class="d-flex align-items-center justify-content-center py-3">
+                            <div class="pe-2">Order id: 56089</div>
+                            <div><img src="assets/images/clipboard.png" class="img-fluid" width="20px"></div>
+                        </div>
+
+                        <div class="pt-4 d-flex align-items-center flex-column">
+                            <button class="button-dark px-3 py-2 w-50" data-bs-toggle="modal" data-bs-target="#order_placed"> Continue Shopping <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+
+                            <button class="button-dark-outline px-3 py-2 mt-3 w-50" data-bs-toggle="modal" data-bs-target="#order_placed"> Track Order <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Order Placed Modal ends -->
 
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

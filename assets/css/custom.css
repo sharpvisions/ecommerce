@@ -47,6 +47,19 @@
     color: white;
 }
 
+.button-dark-outline{
+    background-color: white;
+    color: #2D2D2D;
+    font-size: 14px;
+    border: 1px solid #2D2D2D;
+    border-radius: 10px;
+}
+
+.button-dark-outline:hover{
+    background-color: #2D2D2D;
+    color: white;
+}
+
 .font-12{
     font-size: 12px;
 }

@@ -12,7 +12,7 @@
 
         <link type="text/css" rel="stylesheet" href="assets/css/lightslider.css" />   
 
-        <title>Checkout</title>
+        <title>Order Tracking</title>
     </head>
     <body>
 
@@ -64,123 +64,57 @@
         <!-- cart detail start -->
         <section class="overflow-x-hidden container-xl">
             <div class="row py-5 px-sm-5 px-xl-0">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-12 d-flex align-items-center">
-                            <p class="m-0"><img src="assets/images/icons/left-long-arrow.png" width="20px"></p>
-                            <h4 class="fw-bold m-0 ps-3">Payment Method</h4> 
-                        </div>
-
-                        <div class="col-md-12 pt-4">
-
-                            <!-- item card start -->
-                            <div class="card my-3 rounded-3">
-                                <div class="row d-flex align-items-center p-3">
-                                    <div class="col-md-12 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="form-check m-0">
-                                                <input class="form-check-input" type="radio" name="radiobtn" id="cod" >
-                                                <label for="cod" class="ps-2">Cash on delivery</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-12">
+                            <div class="d-flex align-items-center">
+                                <p class="m-0"><img src="assets/images/icons/left-long-arrow.png" width="20px"></p>
+                                <h4 class="fw-bold m-0 ps-3">Track Order</h4> 
                             </div>
-                            <!-- item card ends -->
 
-                            <!-- item card start -->
-                            <div class="card my-3 rounded-3">
-                                <div class="row d-flex align-items-center p-3">
-                                    <div class="col-md-12 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="form-check m-0">
-                                                <input class="form-check-input" type="radio" name="radiobtn" id="googlepay" >
-                                                <label for="googlepay" class="ps-2">Phone Pay / Google Pay</label>
+                            <div class="row g-3 py-4">
+                                <div class="col-md-4">
+                                    <form>
+                                        <div class="row g-3">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control custom-input font-14" name="tracking_number" id="tracking_number" placeholder="Enter tracking number">
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <button class="button-dark px-4 py-2" data-bs-toggle="modal" data-bs-target="#order_placed"> Track Order <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
-                            </div>
-                            <!-- item card ends -->
 
-                            <!-- item card start -->
-                            <div class="card my-3 rounded-3">
-                                <div class="row d-flex align-items-center p-3">
-                                    <div class="col-md-12 px-3">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="form-check m-0">
-                                                <input class="form-check-input" type="radio" name="radiobtn" id="creditdebit" >
-                                                <label for="creditdebit" class="ps-2">Credit / Debit Card</label>
-                                            </div>
-
-                                            <div class="flex">
-                                                <img src="assets/images/payicon1.png" class="img-fluid">
-                                                <img src="assets/images/payicon2.png" class="img-fluid">
-                                            </div>
-                                        </div>
-
-                                        <div class="pt-4">
-                                            <form>
-                                                <div class="row g-3">
-                                                    <div class="col-md-6">
-                                                        <input type="text" class="form-control custom-input font-14" name="card_number" id="card_number" placeholder="Card Number">
-                                                    </div>
-                                                    
-                                                    <div class="col-md-6">
-                                                        <input type="text" class="form-control custom-input font-14" name="name_on_card" id="name_on_card" placeholder="Name on Card">
-                                                    </div>
-                                                    
-                                                    <div class="col-md-6">
-                                                        <input type="text" class="form-control custom-input font-14" name="month_year" id="month_year" placeholder="MM/YY">
-                                                    </div>
-
-                                                    <div class="col-md-6">
-                                                        <input type="text" class="form-control custom-input font-14" name="cvv" id="cvv" placeholder="CVV”">
-                                                    </div>
+                                <div class="col-md-8">
+                                    <div class="process-wrap active-step1">
+                                        <div class="process-main">
+                                            <div class="col-3 stepcol">
+                                                <div class="process-step-cont">
+                                                    <div class="process-step step-1"></div>
                                                 </div>
-                                            </form>
+                                            </div>
+                                            <div class="col-3 stepcol">
+                                                <div class="process-step-cont">
+                                                    <div class="process-step step-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 stepcol">
+                                                <div class="process-step-cont">
+                                                    <div class="process-step step-3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 stepcol">
+                                                <div class="process-step-cont">
+                                                    <div class="process-step step-4"></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- item card ends -->
-
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 ps-5">
-                    <h6 class="fw-bold">Have a Coupon?</h6>
-                    <div class="coupon-input py-2 d-flex flex-row-reverse align-items-center">
-                        <input type="text" class="form-control" placeholder="Enter Coupon Code" />
-                        <button type="button" class="position-absolute pe-3">Apply</button>
-                    </div>
-
-                    <h6 class="pt-4">PRICE DETAILS (2 ITEMS)</h6>
-                    <div class="py-2 d-flex align-items-center justify-content-between">
-                        <p class="m-0 text-muted font-16">Sub Total</p>
-                        <p class="m-0 fw-bold font-16">$10.30</p>
-                    </div>
-
-                    <div class="py-2 d-flex align-items-center justify-content-between">
-                        <p class="m-0 text-muted font-16">Coupon Discount</p>
-                        <p class="m-0 fw-bold font-16">$0</p>
-                    </div>
-
-                    <div class="py-2 d-flex align-items-center justify-content-between">
-                        <p class="m-0 text-muted font-16">Delivery Charge</p>
-                        <p class="m-0 fw-bold font-16 text-success-light">Free</p>
-                    </div>
-
-                    <hr>
-
-                    <div class="py-2 d-flex align-items-center justify-content-between">
-                        <p class="m-0 text-muted fw-bold font-16">Total Amount</p>
-                        <p class="m-0 fw-bold font-16">$10.30</p>
-                    </div>
-
-                    <div class="pt-4">
-                        <button class="button-dark px-3 py-2 w-100" data-bs-toggle="modal" data-bs-target="#order_placed"> Pay and Place Order <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
                     </div>
                 </div>
             </div>
@@ -288,3 +222,34 @@
     </body>
 </html>
 
+<script>
+    /**This is just a demo to add the process classes**/
+$(document).ready(function($) {    
+	$(".process-step").click(function() {
+
+        var theClass = $(this).attr("class").match(/(^|\s)step-\S+/g);
+        var bute = $.trim(theClass);
+
+        switch (bute) { 
+            case "step-1": 
+        $(".process-wrap").addClass("active-step1")
+            break;
+        case 'step-2': 
+            $(".process-wrap").attr('class', 'process-wrap');
+            $(this).parents(".process-wrap").addClass("active-step2")
+            break;
+        case 'step-3': 
+            $(".process-wrap").attr('class', 'process-wrap');
+            $(this).parents(".process-wrap").addClass("active-step3")
+            break;
+        case 'step-4': 
+            $(".process-wrap").attr('class', 'process-wrap');
+            $(this).parents(".process-wrap").addClass("active-step4 ")
+            break;		
+        default:
+            $(".process-wrap").attr('class', 'process-wrap');
+        }
+
+    })
+});
+</script>

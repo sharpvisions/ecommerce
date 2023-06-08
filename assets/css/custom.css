@@ -813,3 +813,10 @@
 #track_order_table tbody tr:last-child {
     border: 0px solid rgba(0, 128, 0, 0);
 }
+
+.contact-background-image {
+    background: url(../images/login_img.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+}

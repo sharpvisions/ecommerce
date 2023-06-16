@@ -820,3 +820,43 @@
     background-repeat: no-repeat;
     background-position: right;
 }
+
+#accountTab li .nav-link {
+    padding: 10px 20px;
+    border-radius: 5px 5px 0px 0px;
+    color: #1C1C1C;
+    font-weight: 700;
+}
+
+#accountTab li .active {
+    padding: 10px 20px;
+    background: #6e7af738;
+    color: #6E7AF7;
+    font-weight: 700;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#accountTab li .nav-link:hover {
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#triangle-bottom-right {
+    width: 0;
+    height: 0;
+    border-bottom: 55px solid #f6f6f6;
+    border-left: 100px solid transparent;
+    transform: translate(55px, -54px);
+    border-radius: 5px;
+}
+
+#triangle-bottom-right img{
+    display: flex;
+    transform: translate(-30px, 27px) !important;
+}
+
+.success-badge {
+    background-color: #5dac3230;
+    color: #5CAC32;
+    padding: 5px 20px;
+    border-radius: 5px;
+}

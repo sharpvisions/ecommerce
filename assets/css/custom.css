@@ -872,8 +872,20 @@
     margin-bottom: 100px;
 }
 
+.sigin-row{
+    height: 100vh;
+}
 
- /* Small devices (landscape phones, 576px and up) */
+.login-logo {
+    margin-top: 100px; 
+    margin-left: 100px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+ /* Small devices (landscape phones, 140px and up) */
 @media (min-width: 140px) { 
     .signin_form {
         padding-top: 100px; 
@@ -882,8 +894,23 @@
     }
 
     .sigin_img {
-        transform: translate(0px, 0px); 
+        transform: translate(-40px, -150px);
         margin-bottom: 0px;
+        width: 80%;
+    }
+
+    .sigin-row{
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .sigin-row .col-lg-6 {
+        height: 500px;
+    }
+
+    .login-logo {
+        margin-top: 50px; 
+        margin-left: 100px;
     }
 }
 
@@ -896,14 +923,36 @@
     }
 
     .sigin_img {
-        transform: translate(50px, -80px); 
+        transform: translate(-70px, -175px);
         margin-bottom: 100px;
+    }
+
+    .sigin-row .col-lg-6 {
+        height: 800px;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    
+    .sigin-row{
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .sigin-row .col-lg-6 {
+        height: 100%;
+    }
+
+    .sigin_img {
+        transform: translate(70px, -100px);
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .login-logo {
+        margin-top: 100px; 
+        margin-left: 100px;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -915,6 +964,7 @@
     .sigin_img {
         transform: translate(100px, -80px); 
         margin-bottom: 100px;
+        width: 100%;
     }
 }
 
@@ -925,7 +975,8 @@
     }
 
     .sigin_img {
-        transform: translate(140px, 0px); 
+        transform: translate(130px, -80px); 
+        width: 100%;
         margin-bottom: 100px;
     }
 }

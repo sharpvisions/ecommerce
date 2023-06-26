@@ -860,3 +860,72 @@
     padding: 5px 20px;
     border-radius: 5px;
 }
+
+.signin_form {
+    padding-top: 200px; 
+    padding-right: 300px; 
+    padding-left: 100px;
+}
+
+.sigin_img {
+    transform: translate(140px, 0px); 
+    margin-bottom: 100px;
+}
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 140px) { 
+    .signin_form {
+        padding-top: 100px; 
+        padding-right: 70px; 
+        padding-left: 70px; 
+    }
+
+    .sigin_img {
+        transform: translate(0px, 0px); 
+        margin-bottom: 0px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .signin_form {
+        padding-top: 200px; 
+        padding-right: 100px; 
+        padding-left: 100px; 
+    }
+
+    .sigin_img {
+        transform: translate(50px, -80px); 
+        margin-bottom: 100px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .signin_form {
+        padding-right: 200px; 
+    }
+
+    .sigin_img {
+        transform: translate(100px, -80px); 
+        margin-bottom: 100px;
+    }
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .signin_form {
+        padding-right: 300px; 
+    }
+
+    .sigin_img {
+        transform: translate(140px, 0px); 
+        margin-bottom: 100px;
+    }
+}

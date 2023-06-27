@@ -881,6 +881,13 @@
     margin-left: 100px;
 }
 
+.eslides .carousel-item {
+    height: 50%;
+}
+
+.eslides .circle-img, .eslides .slide-img {
+    width: 35%;
+}
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -912,6 +919,42 @@
         margin-top: 50px; 
         margin-left: 100px;
     }
+
+    .slider-slogan{
+        font-size: 14px;
+        font-weight: 600;
+        color: #6E7AF7;
+        text-align: center;
+    }
+    
+    .slider-title{
+        font-size: 28px;
+        font-weight: bold;
+        color: #000000;
+        text-align: center;
+    }
+
+    .price-tag-div{
+        transform: translate(-70px, -75px);
+        position: absolute;
+    }
+
+    .price-tag-div{
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .eslides .carousel-item {
+        height: 80%;
+    }
+
+    .eslides .slide-img {
+        width: 45%;
+    }
+
+    .carousel-row {
+        height: 90%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -929,6 +972,37 @@
 
     .sigin-row .col-lg-6 {
         height: 800px;
+    }
+
+    .price-tag-div{
+        transform: translate(-140px, -120px);
+        position: absolute;
+    }
+
+    .price-tag-div{
+        width: 80px;
+    }
+    
+    .eslides .carousel-item {
+        height: 50%;
+    }
+
+    .carousel-row {
+        height: 100%;
+    }
+
+    .slider-slogan{
+        font-size: 14px;
+        font-weight: 600;
+        color: #6E7AF7;
+        text-align: left;
+    }
+    
+    .slider-title{
+        font-size: 33px;
+        font-weight: bold;
+        color: #000000;
+        text-align: left;
     }
 }
 
@@ -953,6 +1027,29 @@
         margin-top: 100px; 
         margin-left: 100px;
     }
+
+    .eslides .carousel-item {
+        height: 75%;
+    }
+
+    .slider-slogan{
+        font-size: 16px;
+        font-weight: 600;
+        color: #6E7AF7;
+    }
+    
+    .slider-title{
+        font-size: 53px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .price-tag-div{
+        transform: translate(-200px, -165px);
+        position: absolute;
+        font-size: 16px;
+        width: 100px;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -966,6 +1063,17 @@
         margin-bottom: 100px;
         width: 100%;
     }
+
+    .price-tag-div{
+        transform: translate(-130px, -120px);
+        position: absolute;
+        width: 80px;
+    }
+
+    .eslides .slide-img {
+        width: 25%;
+    }
+    
 }
 
  /* XX-Large devices (larger desktops, 1400px and up) */
@@ -978,5 +1086,10 @@
         transform: translate(130px, -80px); 
         width: 100%;
         margin-bottom: 100px;
+    }
+
+    .price-tag-div{
+        transform: translate(-200px, -170px);
+        position: absolute;
     }
 }

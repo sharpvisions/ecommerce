@@ -889,6 +889,10 @@
     width: 35%;
 }
 
+.bumper-offer-img2 {
+    width: 340px !important;
+}
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -955,6 +959,25 @@
     .carousel-row {
         height: 90%;
     }
+
+    .bumper-offer-img1 {
+        margin-top: 50px;
+        width: 300px !important;
+    }
+
+    .bumper-offer-img2 {
+        margin-top: 50px;
+        width: 250px !important;
+    }
+
+    .offer-title, .offer-discount, .offer-product-name, .offer-product-description, .offer-button {
+        text-align: center;
+    }
+
+    .offer-counter {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1003,6 +1026,25 @@
         font-weight: bold;
         color: #000000;
         text-align: left;
+    }
+
+    .bumper-offer-img1 {
+        margin-top: 0px;
+        width: 420px !important;
+    }
+
+    .bumper-offer-img2 {
+        margin-top: 0px;
+        width: 340px !important;
+    }
+
+    .offer-title, .offer-discount, .offer-product-name, .offer-product-description, .offer-button {
+        text-align: start;
+    }
+
+    .offer-counter {
+        display: flex;
+        justify-content: start;
     }
 }
 
@@ -1072,6 +1114,10 @@
 
     .eslides .slide-img {
         width: 25%;
+    }
+
+    .bumper-offer-img2 {
+        width: 420px !important;
     }
     
 }

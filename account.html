@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
         <link type="text/css" rel="stylesheet" href="assets/css/lightslider.css" />   
-
         <title>Account</title>
     </head>
     <body>
@@ -19,17 +18,17 @@
         <!-- Topbar start -->
         <section class="overflow-x-hidden" style="background: #141414;">
             <div class="container-xl">
-                <div class="row py-2 px-sm-5 px-xl-0">
-                    <div class="col-md-4">
+                <div class="row py-2 px-sm-5 px-md-0 px-xl-0">
+                    <div class="col-lg-4 col-md-5 col-sm-12 text-md-start text-center">
                         <span class="font-12 text-white"><i class="bi bi-telephone"></i> (225) 555-0118</span>
                         <span class="font-12 text-white ps-3"><i class="bi bi-envelope"></i> mail@example.com</span>
                     </div>
 
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-4 col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
                         <span class="font-12 text-white">Follow Us  and get a chance to win 80% off</span>
                     </div>
 
-                    <div class="col-md-4 text-end">
+                    <div class="col-lg-4 col-md-3 col-sm-12 text-md-end text-center">
                         <span class="font-12 text-white">Follow </span>
                         <span class="font-12 text-white ps-2"><i class="bi bi-instagram"></i></span>
                         <span class="font-12 text-white ps-2"><i class="bi bi-youtube"></i></span>
@@ -45,37 +44,37 @@
         <section class="overflow-x-hidden border-bottom">
             <div class="container-xl">
                 <div class="row py-3 px-sm-5 px-xl-0">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-4 col-sm-12 text-md-start text-center">
                         <a href="index.html">
                             <img src="assets/images/logo.png" class="img-fluid" width="100px" />
                         </a>
                     </div>
-                    <div class="col-md-6 d-flex align-items-center justify-content-end">
-                        <div class="ps-5"> 
+                    <div class="col-lg-6 col-md-8 col-sm-12 d-flex align-items-center justify-content-md-end justify-content-between pt-md-0 pt-4 ">
+                        <div class="ps-sm-4 ps-lg-5"> 
                             <a href="#" class="text-decoration-none text-dark">
                                 <span>العربية</span> 
                             </a>
                         </div>
 
-                        <div class="ps-5"> 
+                        <div class="ps-sm-4 ps-lg-5"> 
                             <a href="#">
                                 <img src="assets/icons/search.png" width="22px" class="img-fluid"> 
                             </a>
                         </div>
 
-                        <div class="ps-5"> 
+                        <div class="ps-sm-4 ps-lg-5"> 
                             <a href="#">
                                 <img src="assets/icons/wishlist.png" width="22px" class="img-fluid">
                             </a>
                         </div>
 
-                        <div class="ps-5"> 
+                        <div class="ps-sm-4 ps-lg-5"> 
                             <a href="#" data-bs-toggle="offcanvas" data-bs-target="#side-cart" aria-controls="side-cart">
                                 <img src="assets/icons/cart.png" width="22px" class="img-fluid">
                             </a>
                         </div>
 
-                        <div class="ps-5 pe-4 border-end">
+                        <div class="ps-sm-4 ps-lg-5 pe-4 border-end">
                             <a href="signin.html" class="text-decoration-none text-dark">
                                 <img src="assets/icons/user.png" width="22px" class="img-fluid"> <span class="font-12">Sign in</span>
                             </a> 
@@ -359,11 +358,11 @@
 
     
 
-        <!-- footer start -->
-        <section class="overflow-x-hidden bg-light-sm">
+         <!-- footer start -->
+         <section class="overflow-x-hidden bg-light-sm">
             <div class="container-xl">
                 <div class="row py-5 px-sm-5 px-xl-0">
-                    <div class="col-md-4 pe-5">
+                    <div class="col-md-4 pe-md-5 pe-2 ps-2 text-md-left text-center">
                         <img src="assets/images/logo.png" class="img-fluid" width="100px" />
                         
                         <p class="font-14 text-muted m-0 my-4">
@@ -379,7 +378,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-2 text-md-left text-center">
                         <p class="font-14 fw-bold">Account</p>
                         <ul class="p-0 font-14 text-muted">
                             <li class="list-group-item py-2">My account</li>
@@ -389,7 +388,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-md-2 text-md-left text-center">
                         <p class="font-14 fw-bold">Quick Links</p>
                         <ul class="p-0 font-14 text-muted">
                             <li class="list-group-item py-2">Privacy Policy</li>
@@ -398,7 +397,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-4 text-end">
+                    <div class="col-md-4 text-md-end text-center">
                         <div class="mb-3">
                             <img src="assets/images/appstore.png" class="img-fluid" width="100px" />
                         </div>
@@ -424,9 +423,209 @@
         </section>
         <!-- footer ends -->
 
+        <!-- quick view modal start -->
+        <div class="modal fade" id="quickView" tabindex="-1" aria-labelledby="quickViewLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content pb-5">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <!-- gallery and product short info start -->
+                        <section class="overflow-x-hidden">
+
+                            <div class="row p-3">
+                                <!-- product img gallery start -->
+                                <div class="col-md-6 quickViewSlider">
+                                    <ul id="imageGalleryQuick">
+                                        <li data-thumb="assets/images/products/01.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/01.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/02.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/02.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/01.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/03.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/02.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/04.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/01.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/03.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/02.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/02.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/01.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/04.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/02.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/01.png" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- product img gallery end -->
+
+                                <!-- product details start -->
+                                <div class="col-md-6 ps-5">
+                                    <div class="product-tags">
+                                        <p class="tag-light px-3 py-1 rounded m-0 me-3">Zara</p>
+                                        <p class="tag-primary px-3 py-1 rounded m-0 me-3">25% OFF</p>
+                                        <p class="tag-success px-3 py-1 rounded m-0 me-3">In stock</p>
+                                    </div>
+
+                                    <div class="product-detail-title py-3">
+                                        Cotton sweatshirt
+                                    </div>
+
+                                    <div class="product-actual-price">
+                                        $1000
+                                    </div>
+
+                                    <div class="product-sale-price pt-2 d-flex align-items-center">
+                                        $800
+                                        <span class="tax-label text-muted font-12 fw-light ps-4"> Tax Inclusive </span>
+                                    </div>
+
+                                    <div class="product-review pt-2">
+                                        <i class="fa-solid fa-star star-fill"></i>
+                                        <span class="review-number">4.3</span>
+                                        <span class="review-count text-muted">(21 Reviews)</span>
+                                    </div>
+
+                                    
+                                    <div class="product-detail-swatches pt-4">
+                                        <p class="font-14 m-0">Color</p>
+                                        <label>
+                                            <input type="radio" name="color" value="brown">
+                                            <i class="fa-solid fa-circle brown-bg color-swatch my-1"></i>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="cyan">
+                                            <i class="fa-solid fa-circle cyan-bg color-swatch my-1"></i>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="grey">
+                                            <i class="fa-solid fa-circle grey-bg color-swatch my-1"></i>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="product-detail-sizes pt-3">
+                                        <p class="font-14 m-0 mb-2">Size</p>
+                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="btnradio" id="size-xs" autocomplete="off" checked>
+                                            <label class="custom-label" for="size-xs">XS</label>
+                                        
+                                            <input type="radio" class="btn-check" name="btnradio" id="size-sm" autocomplete="off">
+                                            <label class="custom-label" for="size-sm">SM</label>
+                                        
+                                            <input type="radio" class="btn-check" name="btnradio" id="size-md" autocomplete="off">
+                                            <label class="custom-label" for="size-md">MD</label>
+                                        
+                                            <input type="radio" class="btn-check" name="btnradio" id="size-lg" autocomplete="off">
+                                            <label class="custom-label" for="size-lg">L</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-4">
+                                        <p class="font-14 m-0 mb-2">Quantity</p>
+                                        <div class="d-flex">
+                                            <div class="input-group" style="width: 100px;">
+                                                <input type="number" class="form-control qty-input">
+                                                <button class="btn btn-input-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="button-dark px-5 py-2 ms-3"> 
+                                                Add to Cart <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                            </button>
+
+                                            <button type="button" class="detail-wishlist-btn ms-3">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center pt-5">
+                                        <span class="font-14 pe-4">Share</span>
+                                        <span class="fs-5 ps-4"><i class="bi bi-instagram"></i></span>
+                                        <span class="fs-5 ps-4"><i class="bi bi-facebook"></i></span>
+                                        <span class="fs-5 ps-4"><i class="bi bi-twitter"></i></span>
+                                    </div>
+                                    
+                                </div>
+                                <!-- product details ends -->
+                            </div>
+                        </section>
+                        <!-- gallery and product short info start -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- quick view modal ends -->
+
+        <!-- cart offcanvas start -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="side-cart" aria-labelledby="side-cartLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fw-bold" id="side-cartLabel">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- item card start -->
+                <div class="card p-3 my-2">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-3">
+                            <img src="assets/images/products/01.png" class="img-fluid" style="object-fit: contain;"/>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="text-muted m-0 font-14">
+                                T-shirts with multiple colors, for men.
+                            </p>
+                            <p class="fw-bold fs-6 m-0 pt-1">
+                                $10.30
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item card ends -->
+
+                <!-- item card start -->
+                <div class="card p-3 my-2">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-3">
+                            <img src="assets/images/products/02.png" class="img-fluid" style="object-fit: contain;"/>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="text-muted m-0 font-14">
+                                T-shirts with multiple colors, for men.
+                            </p>
+                            <p class="fw-bold fs-6 m-0 pt-1">
+                                $10.30
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item card ends -->
+
+
+
+                <div class="side-cart-footer">
+                    <button type="button" class="btn button-primary rounded w-50 font-14">View cart <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+                    <button type="button" class="btn button-secondary rounded ms-3 font-14 w-100">$20.60 - Checkout <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+                </div>
+
+            </div>
+        </div>
+        <!-- cart offcanvas ends -->
+        
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-               
+        
         <script src="assets/js/index.js"></script>
 
         <!-- Bootstrap Bundle with Popper -->
@@ -435,4 +634,3 @@
 
     </body>
 </html>
-

@@ -815,10 +815,7 @@
 }
 
 .contact-background-image {
-    background: url(../images/login_img.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: right;
+    width: 100%;
 }
 
 #accountTab li .nav-link {
@@ -898,6 +895,11 @@
 
  /* Small devices (landscape phones, 140px and up) */
 @media (min-width: 140px) { 
+    .page-title-arrow {
+        position: relative;
+        padding-right: 10px;
+    }
+    
     .signin_form {
         padding-top: 100px; 
         padding-right: 70px; 
@@ -982,7 +984,12 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+
+    .contact-background-image {
+        width: 100%;
+    }
+
     .signin_form {
         padding-top: 200px; 
         padding-right: 100px; 
@@ -1051,6 +1058,18 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    .page-title-arrow {
+        transform: translate(-40px, 0px);
+        z-index: 100; 
+        position: absolute;
+    }
+    
+    .contact-background-image {
+        width: 40%;
+        position: absolute;
+        transform: translate(-100px, 50px);
+    }
+
     .sigin-row{
         height: 100%;
         overflow-y: hidden;

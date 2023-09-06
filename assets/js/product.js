@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#imageGallery').lightSlider({
+    $('#imageGallery, #imageGalleryQuick').lightSlider({
         gallery:true,
         item:1,
         loop:true,

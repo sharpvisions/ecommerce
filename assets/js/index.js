@@ -66,3 +66,7 @@ rangeInput.forEach((input) => {
     }
   });
 });
+
+$(document).on("click", ".mega-menu-btn", function () {
+  $("#mega-menu-collapse").toggleClass("d-none");
+});

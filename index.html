@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/custom.css">
         <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -49,6 +50,7 @@
                             <img src="assets/images/logo.png" class="img-fluid" width="100px" />
                         </a>
                     </div>
+                    
                     <div class="col-lg-6 col-md-8 col-sm-12 d-flex align-items-center justify-content-md-end justify-content-between pt-md-0 pt-4 ">
                         <div class="ps-sm-4 ps-lg-5"> 
                             <a href="#" class="text-decoration-none text-dark">
@@ -81,9 +83,9 @@
                         </div>
 
                         <div class="ps-4"> 
-                            <a href="#" class="text-dark">
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu" aria-controls="navMenu">
                                 <i class="bi bi-list fs-2"></i> 
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -95,25 +97,13 @@
         <section class="overflow-x-hidden border-bottom">
             <div class="container-xl">
                 <div class="row py-3 px-sm-5 px-xl-0">
-                    <div class="col-auto d-flex align-items-center">
-                        <a href="#" class="text-dark">
-                            <div class="pe-2"> <i class="bi bi-list fs-2"></i> </div>
-                        </a>
-
-                        <!-- <a href="#" class="text-dark text-decoration-none">
-                            <div class="pe-lg-4 pe-md-1 pe-0 font-13 fw-bold d-flex align-items-center"> ALL CATEGORIES <i class="fa-solid fa-chevron-down ms-2"></i></div>
-                        </a> -->
-                        
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Mega Menu
-                            </a>
-                            
-                            <div class="dropdown-menu mega-menu w-100" aria-labelledby="megaMenu">
-                                <p>dddddddddd dddddd ddddddd ddddd ddddddddd dddddd ddddddd dddddd dddd dddd ddd ddddd ddd d  dddd ddd ddddddddddd dddddd ddddddd ddddd ddddddddd dddddd ddddddd dddddd dddd dddd ddd ddddd ddd d  dddd ddd ddddddddddd dddddd ddddddd ddddd ddddddddd dddddd ddddddd dddddd dddd dddd ddd ddddd ddd d  dddd ddd ddddddddddd dddddd ddddddd ddddd ddddddddd dddddd ddddddd dddddd dddd dddd ddd ddddd ddd d  dddd ddd d</p>
-                            </div>
-                        </div>
+                    <div class="col-auto">
+                        <button class="btn mega-menu-btn d-flex align-items-center" type="button">
+                            <span class="pe-2 text-dark"> <i class="bi bi-list fs-2"></i> </span>
+                            <span>All Categories</span>
+                        </button>
                     </div>
+
                     <div class="col d-flex align-items-center custom-scroll" id="scrollable-list">
                         <ul class="m-0 font-13 fw-bold">
                             <li class="list-inline-item me-md-5 me-2">
@@ -172,6 +162,12 @@
                                 </a>
                             </li>
                         </ul>
+                    </div>
+                </div>
+                
+                <div class="position-absolute d-none container" id="mega-menu-collapse" style="z-index: 100; left: 0; right: 0;">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                     </div>
                 </div>
             </div>
@@ -918,6 +914,18 @@
         </section>
         <!-- footer ends -->
 
+        <!-- Nav menu start -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="navMenu" aria-labelledby="navMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="navMenuLabel">Backdrop with scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+            </div>
+        </div>
+        <!-- Nav menu ends -->
+        
         <!-- quick view modal start -->
         <div class="modal fade" id="quickView" tabindex="-1" aria-labelledby="quickViewLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -1121,13 +1129,13 @@
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         
-        <script src="assets/js/lightslider.js"></script>
-        <script src="assets/js/product.js"></script>
+        <!-- <script src="assets/js/lightslider.js"></script>
+        <script src="assets/js/product.js"></script> -->
         <script src="assets/js/index.js"></script>
 
         <!-- Bootstrap Bundle with Popper -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
-
     </body>
 </html>

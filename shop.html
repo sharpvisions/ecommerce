@@ -82,9 +82,54 @@
                         </div>
 
                         <div class="ps-4"> 
-                            <a href="#" class="text-dark">
-                                <i class="bi bi-list fs-2"></i> 
-                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                <span class="pe-2 text-dark"> <i class="bi bi-list fs-2"></i> </span>
+                            </button>
+                            
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <button type="button" class="btn-close position-absolute end-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-4">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="account.html">Account</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="cart_detail.html">Cart Details</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="category.html">Category</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="checkout_delivery_address.html">Checkout Delivery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="checkout_payment_method.html">Checkout Payment</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="order_tracking.html">Order Tracking</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="product.html">Product Page</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="shop.html">Shop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="signin.html">Sign in</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="signup.html">Sign up</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -96,15 +141,13 @@
         <section class="overflow-x-hidden border-bottom">
             <div class="container-xl">
                 <div class="row py-3 px-sm-5 px-xl-0">
-                    <div class="col-auto d-flex align-items-center">
-                        <a href="#" class="text-dark">
-                            <div class="pe-2"> <i class="bi bi-list fs-2"></i> </div>
-                        </a>
-
-                        <a href="#" class="text-dark text-decoration-none">
-                            <div class="pe-4 font-13 fw-bold d-flex align-items-center"> ALL CATEGORIES <i class="fa-solid fa-chevron-down ms-2"></i></div>
-                        </a>
+                    <div class="col-auto">
+                        <button class="btn mega-menu-btn d-flex align-items-center" type="button">
+                            <span class="pe-2 text-dark"> <i class="bi bi-list fs-2"></i> </span>
+                            <span>All Categories</span>
+                        </button>
                     </div>
+                    
                     <div class="col d-flex align-items-center custom-scroll" id="scrollable-list">
                         <ul class="m-0 font-13 fw-bold">
                             <li class="list-inline-item me-5">
@@ -165,6 +208,218 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- Mega Menu Container Start -->
+                <div class="position-absolute d-none container" id="mega-menu-collapse" style="z-index: 100; left: 0; right: 0;">
+                    <div class="card card-body px-5 py-4">
+                        <div class="row">
+                            <!-- Mega Menu Column One -->
+                            <div class="col-lg-3 col-md-6">
+                                <div>
+                                    <p class="text-sm fs-14 text-uppercase fw-bold m-0 py-1">Small home appliances</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Mop</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Iron</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Coffee Machine</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Robot Vaccum Cleaner</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Tea Machine</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Waffle Maker</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Weight</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Automotive</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Books</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Music, Movies & Tv Shows </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <p class="text-uppercase fs-14 fw-bold m-0 py-1">Wearable Technology</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Smart Watch</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Smart Wristband</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Mega Menu Column Two -->
+                            <div class="col-lg-3 col-md-6">
+                                <div>
+                                    <p class="text-sm fs-14 text-uppercase fw-bold m-0 py-1">Phone</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Mobile Phone</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Cover & Case</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Chargers</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Power Banks</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <p class="text-uppercase fs-14 fw-bold m-0 py-1">Computer & Tablet</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Laptop</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Tablet</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Computer Components</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Monitor</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Printer & Scanner</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Peripherals</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Network & Modem</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Power Bank</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Mega Menu Column Three -->
+                            <div class="col-lg-3 col-md-6">
+                                <div>
+                                    <p class="text-sm fs-14 text-uppercase fw-bold m-0 py-1">TV & Picture & Sound</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Tv</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Soundbar</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Projector</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Media Player</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Speaker</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Headphone</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <p class="text-uppercase fs-14 fw-bold m-0 py-1">Personal Care Appliances</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Hair Straightener</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Shaving Machine</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Curling Iron</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Hair Dryer</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Hair Removal Cream</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Mega Menu Column Four -->
+                            <div class="col-lg-3 col-md-6">
+                                <div>
+                                    <p class="text-sm fs-14 text-uppercase fw-bold m-0 py-1">Household Appliances</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Fridge</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Combi Boiler</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Washing Machine</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Sports & Outdoors</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Deep Freeze</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Built-in</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <p class="text-uppercase fs-14 fw-bold m-0 py-1">Electronic Accessories</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Computer Accessories</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Phone Accessories</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Tv Accessories</a>
+                                        </li>
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Data Storage</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <p class="text-uppercase fs-14 fw-bold m-0 py-1">Photo & Camera</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="py-1">
+                                            <a class="nav-link" href="#">Action Camera</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mega Menu Container Ends -->
             </div>
         </section>
         <!-- category menu ends -->

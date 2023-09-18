@@ -778,7 +778,7 @@
                                     </div>
                                 </div>
                                 <div class="hover-actions">
-                                    <button type="button" class="quick-view-btn shadow-sm my-2"><i class="fa-regular fa-eye"></i></button>
+                                    <button type="button" class="quick-view-btn shadow-sm my-2" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fa-regular fa-eye"></i></button>
                                     <button type="button" class="wishlist-btn shadow-sm my-2"><i class="fa-regular fa-heart"></i></button>
                                     <button type="button" class="add-to-cart-btn shadow-sm my-2">Add to cart</button>
                                 </div>
@@ -805,7 +805,7 @@
                                     </div>
                                 </div>
                                 <div class="hover-actions">
-                                    <button type="button" class="quick-view-btn shadow-sm my-2"><i class="fa-regular fa-eye"></i></button>
+                                    <button type="button" class="quick-view-btn shadow-sm my-2" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fa-regular fa-eye"></i></button>
                                     <button type="button" class="wishlist-btn shadow-sm my-2"><i class="fa-regular fa-heart"></i></button>
                                     <button type="button" class="add-to-cart-btn shadow-sm my-2">Add to cart</button>
                                 </div>
@@ -832,7 +832,7 @@
                                     </div>
                                 </div>
                                 <div class="hover-actions">
-                                    <button type="button" class="quick-view-btn shadow-sm my-2"><i class="fa-regular fa-eye"></i></button>
+                                    <button type="button" class="quick-view-btn shadow-sm my-2" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fa-regular fa-eye"></i></button>
                                     <button type="button" class="wishlist-btn shadow-sm my-2"><i class="fa-regular fa-heart"></i></button>
                                     <button type="button" class="add-to-cart-btn shadow-sm my-2">Add to cart</button>
                                 </div>
@@ -859,7 +859,7 @@
                                     </div>
                                 </div>
                                 <div class="hover-actions">
-                                    <button type="button" class="quick-view-btn shadow-sm my-2"><i class="fa-regular fa-eye"></i></button>
+                                    <button type="button" class="quick-view-btn shadow-sm my-2" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fa-regular fa-eye"></i></button>
                                     <button type="button" class="wishlist-btn shadow-sm my-2"><i class="fa-regular fa-heart"></i></button>
                                     <button type="button" class="add-to-cart-btn shadow-sm my-2">Add to cart</button>
                                 </div>
@@ -891,7 +891,7 @@
                                     </div>
                                 </div>
                                 <div class="hover-actions">
-                                    <button type="button" class="quick-view-btn shadow-sm my-2"><i class="fa-regular fa-eye"></i></button>
+                                    <button type="button" class="quick-view-btn shadow-sm my-2" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fa-regular fa-eye"></i></button>
                                     <button type="button" class="wishlist-btn shadow-sm my-2"><i class="fa-regular fa-heart"></i></button>
                                     <button type="button" class="add-to-cart-btn shadow-sm my-2">Add to cart</button>
                                 </div>
@@ -918,7 +918,7 @@
                                     </div>
                                 </div>
                                 <div class="hover-actions">
-                                    <button type="button" class="quick-view-btn shadow-sm my-2"><i class="fa-regular fa-eye"></i></button>
+                                    <button type="button" class="quick-view-btn shadow-sm my-2" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fa-regular fa-eye"></i></button>
                                     <button type="button" class="wishlist-btn shadow-sm my-2"><i class="fa-regular fa-heart"></i></button>
                                     <button type="button" class="add-to-cart-btn shadow-sm my-2">Add to cart</button>
                                 </div>
@@ -945,7 +945,7 @@
                                     </div>
                                 </div>
                                 <div class="hover-actions">
-                                    <button type="button" class="quick-view-btn shadow-sm my-2"><i class="fa-regular fa-eye"></i></button>
+                                    <button type="button" class="quick-view-btn shadow-sm my-2" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fa-regular fa-eye"></i></button>
                                     <button type="button" class="wishlist-btn shadow-sm my-2"><i class="fa-regular fa-heart"></i></button>
                                     <button type="button" class="add-to-cart-btn shadow-sm my-2">Add to cart</button>
                                 </div>
@@ -972,7 +972,7 @@
                                     </div>
                                 </div>
                                 <div class="hover-actions">
-                                    <button type="button" class="quick-view-btn shadow-sm my-2"><i class="fa-regular fa-eye"></i></button>
+                                    <button type="button" class="quick-view-btn shadow-sm my-2" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fa-regular fa-eye"></i></button>
                                     <button type="button" class="wishlist-btn shadow-sm my-2"><i class="fa-regular fa-heart"></i></button>
                                     <button type="button" class="add-to-cart-btn shadow-sm my-2">Add to cart</button>
                                 </div>
@@ -998,8 +998,6 @@
             </div>
         </section>
         <!-- category products  end -->
-
-    
 
         <!-- footer start -->
         <section class="overflow-x-hidden bg-light-sm">
@@ -1066,10 +1064,157 @@
         </section>
         <!-- footer ends -->
 
+        <!-- quick view modal start -->
+        <div class="modal fade" id="quickView" tabindex="-1" aria-labelledby="quickViewLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content pb-5">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <!-- gallery and product short info start -->
+                        <section class="overflow-x-hidden">
+
+                            <div class="row p-3">
+                                <!-- product img gallery start -->
+                                <div class="col-md-6 quickViewSlider">
+                                    <ul id="imageGalleryQuick">
+                                        <li data-thumb="assets/images/products/01.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/01.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/02.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/02.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/01.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/03.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/02.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/04.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/01.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/03.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/02.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/02.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/01.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/04.png" />
+                                        </li>
+                                        <li data-thumb="assets/images/products/02.png" class="d-flex align-items-center justify-content-center bg-light">
+                                            <img src="assets/images/products/01.png" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- product img gallery end -->
+
+                                <!-- product details start -->
+                                <div class="col-md-6 ps-5">
+                                    <div class="product-tags">
+                                        <p class="tag-light px-3 py-1 rounded m-0 me-3">Zara</p>
+                                        <p class="tag-primary px-3 py-1 rounded m-0 me-3">25% OFF</p>
+                                        <p class="tag-success px-3 py-1 rounded m-0 me-3">In stock</p>
+                                    </div>
+
+                                    <div class="product-detail-title py-3">
+                                        Cotton sweatshirt
+                                    </div>
+
+                                    <div class="product-actual-price">
+                                        $1000
+                                    </div>
+
+                                    <div class="product-sale-price pt-2 d-flex align-items-center">
+                                        $800
+                                        <span class="tax-label text-muted font-12 fw-light ps-4"> Tax Inclusive </span>
+                                    </div>
+
+                                    <div class="product-review pt-2">
+                                        <i class="fa-solid fa-star star-fill"></i>
+                                        <span class="review-number">4.3</span>
+                                        <span class="review-count text-muted">(21 Reviews)</span>
+                                    </div>
+
+                                    
+                                    <div class="product-detail-swatches pt-4">
+                                        <p class="font-14 m-0">Color</p>
+                                        <label>
+                                            <input type="radio" name="color" value="brown">
+                                            <i class="fa-solid fa-circle brown-bg color-swatch my-1"></i>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="cyan">
+                                            <i class="fa-solid fa-circle cyan-bg color-swatch my-1"></i>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="color" value="grey">
+                                            <i class="fa-solid fa-circle grey-bg color-swatch my-1"></i>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="product-detail-sizes pt-3">
+                                        <p class="font-14 m-0 mb-2">Size</p>
+                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                            <input type="radio" class="btn-check" name="btnradio" id="size-xs" autocomplete="off" checked>
+                                            <label class="custom-label" for="size-xs">XS</label>
+                                        
+                                            <input type="radio" class="btn-check" name="btnradio" id="size-sm" autocomplete="off">
+                                            <label class="custom-label" for="size-sm">SM</label>
+                                        
+                                            <input type="radio" class="btn-check" name="btnradio" id="size-md" autocomplete="off">
+                                            <label class="custom-label" for="size-md">MD</label>
+                                        
+                                            <input type="radio" class="btn-check" name="btnradio" id="size-lg" autocomplete="off">
+                                            <label class="custom-label" for="size-lg">L</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-4">
+                                        <p class="font-14 m-0 mb-2">Quantity</p>
+                                        <div class="d-flex">
+                                            <div class="input-group" style="width: 100px;">
+                                                <input type="number" class="form-control qty-input">
+                                                <button class="btn btn-input-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <button class="button-dark px-5 py-2 ms-3"> 
+                                                Add to Cart <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                                            </button>
+
+                                            <button type="button" class="detail-wishlist-btn ms-3">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center pt-5">
+                                        <span class="font-14 pe-4">Share</span>
+                                        <span class="fs-5 ps-4"><i class="bi bi-instagram"></i></span>
+                                        <span class="fs-5 ps-4"><i class="bi bi-facebook"></i></span>
+                                        <span class="fs-5 ps-4"><i class="bi bi-twitter"></i></span>
+                                    </div>
+                                    
+                                </div>
+                                <!-- product details ends -->
+                            </div>
+                        </section>
+                        <!-- gallery and product short info start -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- quick view modal ends -->
+
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
                
         <script src="assets/js/lightslider.js"></script>
+        <script src="assets/js/product.js"></script>
         <script src="assets/js/index.js"></script>
 
         <!-- Bootstrap Bundle with Popper -->
